@@ -12,8 +12,6 @@ script:
 deploy:
   provider: script
   skip_cleanup: true
-  script: 
-    - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/harness ubuntu@ec2-54-91-208-223.compute-1.amazonaws.com:/home/ubuntu/phuzzer_docker/arena
-    - ssh ubuntu@ec2-54-91-208-223.compute-1.amazonaws.com "touch ~/myface"
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/harness ubuntu@ec2-54-91-208-223.compute-1.amazonaws.com:/home/ubuntu/phuzzer_docker/arena; ssh ubuntu@ec2-54-91-208-223.compute-1.amazonaws.com "touch ~/myface"
   on:
     branch: master
