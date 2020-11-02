@@ -26,3 +26,4 @@ deploy:
   file: chall.bin
   on:
     repo: Pascal-0x90/Travis-Fuzz-Basic
+    branches: master
