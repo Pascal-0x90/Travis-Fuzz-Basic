@@ -27,4 +27,3 @@ deploy:
   skip_cleanup: true
   on:
     repo: Pascal-0x90/Travis-Fuzz-Basic
-    tags: true
