@@ -24,6 +24,7 @@ deploy:
   api_key:
     secure: BjEDxU4DIpml4OJm9ks6cr0h4hl9McyDc4X5cYSkCSUkuCIWaYo3XFn1nndf/kdCkSFOEHtKJvKzgsd2GgGiDZJzY6kGHudo/fjBsE6OeVzuFCldrINCf15dYJverK+04kQzs0u5ymxMokzB3zjKmP3fUAZS2/16IKViJR4vQ1MRhM/8gVLAxpKH6VL4lmELvC//bF7GYbH47czJAfdNjwNf2NxHae7De7mFoabWI7Vz6To00xTE6QRk244pwXDojlf/BKLPMRmdESXW0fdIJaCL7kd0WspXQ/TttkZBbK97C9wz0jX9rXG+q10t7cMZABlYuMmNGn+kevjKFe2KgYjtKyKkfRbRgf1gUVEDyduZUz9A+eaEfV92wXjRvLBYaJGXmUI3rgZc73ohTM7DfLutNZ3+iGNv3waGHXDIlDqYCDINCJ+jWI/M1Jz2bNWuhbof+hxjf09Ocpyr7IsxxUI26Dg+x3g8l/3YbrQD4L0EXpPosYprfTWyppBl6MuPl9THwxHAM/fLDrkZnsejY7K6eEnvm/GZKNYsqVg/CjUVS1VE31qCiCCnSMjD6fQpsVzihQIfOPMYp8S7olYgO6jX8CMK+5UyXsQ0Kdni2VjzoHJ5BZ0iKrV9Zej4a7XMi7mrRzIhaJJmvo887jVTNiY45krRqwTzUh8EIh5cpRo=
   file: chall.bin
+  skip_cleanup: true
   on:
     repo: Pascal-0x90/Travis-Fuzz-Basic
-    all_branches: true
+    tags: false
