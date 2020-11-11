@@ -22,6 +22,7 @@ int main() {
     int number = 2;
     char vart[] = "Hello gordon!\n";
     char buff[10];
+    //thing
     char big_buff[50];
     printf("Do your thing\n");
     scanf("%s",&buff);
