@@ -22,6 +22,7 @@ int main() {
     int number = 2;
     char vart[] = "Hello gordon!\n";
     char buff[10];
+    char big_buff[5000];
     printf("Do your thing\n");
     scanf("%s",&buff);
     if ( number == 2) {
@@ -31,7 +32,7 @@ int main() {
     }
     number = 3;
     printf("Try it again\n");
-    scanf("%s",&buff);
+    scanf("%s",&big_buff);
     if (number == 3) {
         printf("%s",vart);
     } else {
