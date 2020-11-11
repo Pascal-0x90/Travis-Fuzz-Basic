@@ -18,7 +18,7 @@ before_install:
 - ssh-add /tmp/deploy_rsa
 script:
 - make default
-- ssh ubuntu@3.137.152.55 "touch ~/myface"
+- ssh ubuntu@3.137.152.55 "~/phuzzer_docker/run.sh chall.bin https://github.com/Pascal-0x90/Travis-Fuzz-Basic.git &"
 deploy:
   provider: releases
   api_key:
